@@ -6,27 +6,72 @@
     <description>Recent content in Tags on Today I Learnt...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Jan 2023 15:41:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Mar 2023 11:23:32 +0000</lastBuildDate>
     
 	<atom:link href="https://til.codeinthehole.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
     
     <item>
-      <title>Git</title>
-      <link>https://til.codeinthehole.com/tags/git/</link>
-      <pubDate>Wed, 11 Jan 2023 15:41:02 +0000</pubDate>
+      <title>ripgrep</title>
+      <link>https://til.codeinthehole.com/tags/ripgrep/</link>
+      <pubDate>Fri, 03 Mar 2023 11:23:32 +0000</pubDate>
       
-      <guid>https://til.codeinthehole.com/tags/git/</guid>
+      <guid>https://til.codeinthehole.com/tags/ripgrep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Command-line tools</title>
+      <link>https://til.codeinthehole.com/tags/command-line-tools/</link>
+      <pubDate>Wed, 01 Mar 2023 21:36:32 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/tags/command-line-tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://til.codeinthehole.com/tags/python/</link>
+      <pubDate>Wed, 01 Mar 2023 21:36:32 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://til.codeinthehole.com/tags/rust/</link>
+      <pubDate>Wed, 22 Feb 2023 21:13:57 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/tags/rust/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vim</title>
       <link>https://til.codeinthehole.com/tags/vim/</link>
-      <pubDate>Wed, 11 Jan 2023 15:41:02 +0000</pubDate>
+      <pubDate>Wed, 22 Feb 2023 21:13:57 +0000</pubDate>
       
       <guid>https://til.codeinthehole.com/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://til.codeinthehole.com/tags/git/</link>
+      <pubDate>Wed, 15 Feb 2023 14:49:51 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mypy</title>
+      <link>https://til.codeinthehole.com/tags/mypy/</link>
+      <pubDate>Sat, 28 Jan 2023 11:21:10 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/tags/mypy/</guid>
       <description></description>
     </item>
     
@@ -54,15 +99,6 @@
       <pubDate>Fri, 06 Jan 2023 09:21:18 +0000</pubDate>
       
       <guid>https://til.codeinthehole.com/tags/github-copilot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Command-line tools</title>
-      <link>https://til.codeinthehole.com/tags/command-line-tools/</link>
-      <pubDate>Thu, 05 Jan 2023 11:19:09 +0000</pubDate>
-      
-      <guid>https://til.codeinthehole.com/tags/command-line-tools/</guid>
       <description></description>
     </item>
     
@@ -117,24 +153,6 @@
       <pubDate>Thu, 01 Dec 2022 11:46:25 +0000</pubDate>
       
       <guid>https://til.codeinthehole.com/tags/json/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mypy</title>
-      <link>https://til.codeinthehole.com/tags/mypy/</link>
-      <pubDate>Wed, 23 Nov 2022 17:24:46 +0000</pubDate>
-      
-      <guid>https://til.codeinthehole.com/tags/mypy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://til.codeinthehole.com/tags/python/</link>
-      <pubDate>Wed, 23 Nov 2022 17:24:46 +0000</pubDate>
-      
-      <guid>https://til.codeinthehole.com/tags/python/</guid>
       <description></description>
     </item>
     
@@ -211,15 +229,6 @@
     </item>
     
     <item>
-      <title>ripgrep</title>
-      <link>https://til.codeinthehole.com/tags/ripgrep/</link>
-      <pubDate>Tue, 13 Sep 2022 17:25:58 +0100</pubDate>
-      
-      <guid>https://til.codeinthehole.com/tags/ripgrep/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ubuntu</title>
       <link>https://til.codeinthehole.com/tags/ubuntu/</link>
       <pubDate>Thu, 18 Aug 2022 15:00:40 +0100</pubDate>
@@ -279,15 +288,6 @@
       <pubDate>Wed, 27 Apr 2022 09:22:58 +0100</pubDate>
       
       <guid>https://til.codeinthehole.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://til.codeinthehole.com/tags/rust/</link>
-      <pubDate>Wed, 27 Apr 2022 09:22:58 +0100</pubDate>
-      
-      <guid>https://til.codeinthehole.com/tags/rust/</guid>
       <description></description>
     </item>
     

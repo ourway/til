@@ -6,11 +6,65 @@
     <description>Recent content in Posts on Today I Learnt...</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Jan 2023 15:41:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Mar 2023 11:23:32 +0000</lastBuildDate>
     
 	<atom:link href="https://til.codeinthehole.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
 
+    
+    <item>
+      <title>How to use `ripgrep` in `while read` loops</title>
+      <link>https://til.codeinthehole.com/posts/how-to-use-ripgrep-in-while-read-loops/</link>
+      <pubDate>Fri, 03 Mar 2023 11:23:32 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/posts/how-to-use-ripgrep-in-while-read-loops/</guid>
+      <description>Beware of using rg in a while read block when there&amp;rsquo;s no path argument.</description>
+    </item>
+    
+    <item>
+      <title>How to create a word cloud from text piped via STDIN</title>
+      <link>https://til.codeinthehole.com/posts/how-to-create-a-word-cloud-from-text-piped-via-stdin/</link>
+      <pubDate>Wed, 01 Mar 2023 21:36:32 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/posts/how-to-create-a-word-cloud-from-text-piped-via-stdin/</guid>
+      <description>There&amp;rsquo;s a word_cloud generator package available from PyPI that can take its source text from STDIN:</description>
+    </item>
+    
+    <item>
+      <title>About the `typos` source code spell checker</title>
+      <link>https://til.codeinthehole.com/posts/about-the-typos-source-code-spell-checker/</link>
+      <pubDate>Wed, 22 Feb 2023 21:13:57 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/posts/about-the-typos-source-code-spell-checker/</guid>
+      <description>typos is a source code spell checker written Rust that&amp;rsquo;s useful for finding typos in code comments and variable names.</description>
+    </item>
+    
+    <item>
+      <title>How to perform a non-interactive, interactive Git rebase</title>
+      <link>https://til.codeinthehole.com/posts/how-to-perform-a-noninteractive-interactive-git-rebase/</link>
+      <pubDate>Wed, 15 Feb 2023 14:49:51 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/posts/how-to-perform-a-noninteractive-interactive-git-rebase/</guid>
+      <description>If you create a load of fix-up commits using:</description>
+    </item>
+    
+    <item>
+      <title>How to write Vimscript functions that operate on a visually selected area</title>
+      <link>https://til.codeinthehole.com/posts/how-to-write-vimscript-functions-that-operate-on-a-visually-selected-area/</link>
+      <pubDate>Sat, 28 Jan 2023 11:57:30 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/posts/how-to-write-vimscript-functions-that-operate-on-a-visually-selected-area/</guid>
+      <description>I was trying to write a Vim function that would act on a visual selection but found it surprisingly difficult.</description>
+    </item>
+    
+    <item>
+      <title>Not to union Python list types</title>
+      <link>https://til.codeinthehole.com/posts/not-to-union-python-list-types/</link>
+      <pubDate>Sat, 28 Jan 2023 11:21:10 +0000</pubDate>
+      
+      <guid>https://til.codeinthehole.com/posts/not-to-union-python-list-types/</guid>
+      <description>Consider this contrived function which either returns a list of tuples or a list of dicts depending on an argument value:</description>
+    </item>
     
     <item>
       <title>How to show the history of a file with `git log --patch`</title>

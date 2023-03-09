@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="
+    If you create a load of fix-up commits using: ...
+">
+
+        <link rel="shortcut icon" href="https://til.codeinthehole.com/favicon.ico">
+
+        
+            
+
+        
+        <link rel="stylesheet" href="https://til.codeinthehole.com/css/main.min.css">
+
+        
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://til.codeinthehole.com/posts/how-to-perform-a-noninteractive-interactive-git-rebase/" />
+<meta property="og:title" content="TIL How to perform a non-interactive, interactive Git rebase — David Winterbottom" />
+<meta property="og:description" content="If you create a load of fix-up commits using: [Reading time: 1 minute]" />
+
+
+<meta property="og:image" content="https://i.imgur.com/buBLoi9.png" />
+
+
+        <title>
+    TIL How to perform a non-interactive, interactive Git rebase — David Winterbottom
+</title>
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4500T4RE03"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {dataLayer.push(arguments); }
+
+            
+            window['ga-disable-G-4500T4RE03'] = location.hostname != "til.codeinthehole.com"
+            gtag('js', new Date());
+            gtag('config', 'G-4500T4RE03');
+        </script>
+
+    </head>
+
+    <body>
+        
+            <header id="banner">
+                <h2><a href="https://til.codeinthehole.com/">Today I Learnt...</a></h2>
+            </header>
+        
+
+        <main id="content">
+            
+    <article>
+        <header id="post-header">
+            <div id="date_sentence">
+                On <time>February 15, 2023</time>, <a href="https://codeinthehole.com">I</a> learnt ...
+            </div>
+            <h1>How to perform a non-interactive, interactive Git rebase</h1>
+        </header><p>If you create a load of fix-up commits using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit --fixup $COMMIT_HASH
+</span></span></code></pre></div><p>then you don&rsquo;t necessarily want to run <code>git rebase</code> in interactive mode to fold
+these commits into the branch history.</p>
+<p>The <code>--autosquash</code> option is sufficient as it re-orders the rebase todo list to
+squash the fix-up commits into their biological parents.</p>
+<p>In such cases, opening and closing an editor is a waste of time.</p>
+<p>Instead, use the <code>GIT_SEQUENCE_EDITOR</code> environment variable to specify a
+non-interactive no-op &ldquo;editor&rdquo; like <code>true</code> (or even merely <code>:</code>). E.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GIT_SEQUENCE_EDITOR<span style="color:#f92672">=</span>true git rebase --autosquash -i origin/master
+</span></span></code></pre></div><p>This will fold the fix-up commits into your branch history in one command.</p>
+<h3 id="source">Source</h3>
+<p>Tip found in <a href="https://stackoverflow.com/a/29094904">this StackOverflow answer</a> and <a href="https://www.reddit.com/r/git/comments/uzh2no/what_is_the_utility_of_noninteractive_rebase/">this Reddit
+thread</a></p>
+</article>
+
+        </main>
+
+        
+    <footer id="footer">
+
+        
+        
+
+        
+        
+        
+
+            
+            
+
+            
+                
+
+                
+                    <p>Other things learnt about <a href="https://til.codeinthehole.com/tags/git/">Git</a>:</p>
+                    <ul>
+                        
+                            <li><a href="/posts/how-to-show-the-history-of-a-file-with-git-log-patch/">How to show the history of a file with <code>git log --patch</code></a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/how-to-continue-a-git-rebase-and-skip-editing-the-commit-message/">How to continue a Git rebase and skip editing the commit message</a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/how-to-print-the-changed-filepaths-from-a-commit-and-nothing-else/">How to find the files from a commit that deleted a given pattern</a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/about-gits-diffrelative-config-option/">About Git&rsquo;s <code>diff.relative</code> config option</a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/about-git-mergebase/">About <code>git merge-base</code></a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/that-git-aliases-that-run-an-external-command-are-run-from-the-repository-root/">Git aliases that run an external command are run from the repository root</a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/about-git-log-g/">About <code>git log -G</code></a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/that-vimpolyglot-conflicts-with-hub-when-creating-pull-requests/">That <code>vim-polyglot</code> conflicts with Hub when creating pull requests</a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/about-gitabsorb/">About <code>git-absorb</code></a></li>
+
+                            
+                            
+                        
+                            <li><a href="/posts/how-to-include-the-date-in-git-reflog-output/">How to include the date in <code>git reflog</code> output</a></li>
+
+                            
+                            
+                        
+                    </ul>
+                
+
+            
+
+        
+
+        <br/>
+
+        
+        
+        
+            <p>Jump to the previous/next TIL using the left/right cursor keys.</p>
+        
+    </footer>
+
+
+        
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+    <script>
+        
+            Mousetrap.bind("left", function() { window.location.replace("\/posts\/how-to-write-vimscript-functions-that-operate-on-a-visually-selected-area\/"); })
+        
+
+        
+            Mousetrap.bind("right", function() { window.location.replace("\/posts\/about-the-typos-source-code-spell-checker\/"); })
+        
+    </script>
+
+    </body>
+</html>
